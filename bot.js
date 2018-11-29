@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const devs = ['389090790984515594','350408440566382592'];
-var prefix = "!";
-const adminprefix = "!"
+var prefix = "1";
+const adminprefix = "1"
 const db = require('quick.db');
 const client = new Discord.Client();   
 const giphy = require('giphy-api')();    
@@ -229,7 +229,7 @@ if (err) console.error(err);
 client.on('message',function(message) {
   if(!message.channel.guild) return;
 
-const prefix = "!";
+const prefix = "1";
     if (message.content === prefix + "discrim") {
 let messageArray = message.content.split(" ");
 let args = messageArray.slice(1);
@@ -268,7 +268,7 @@ if(message.content === '!voice') {
 
 
 client.on('message', async message => {
-	var prefix = "!";
+	var prefix = "1";
   if(message.content.startsWith(prefix + "tc")) {
       if(message.author.bot) return;
     if(!message.channel.guild) return;
@@ -2877,7 +2877,7 @@ client.on("message", (message) => {
 const sWlc = {}
 const premium = ['389090790984515594']
 client.on('message', message => {
-var prefix = "!";
+var prefix = "1";
 if(message.channel.type === "dm") return;
 if(message.author.bot) return;
   if(!sWlc[message.guild.id]) sWlc[message.guild.id] = {
